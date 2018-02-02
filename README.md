@@ -16,6 +16,28 @@ Or install it yourself as:
 
 ## Usage
 
+### API version 2.0
+
+Provide your credentials
+
+```ruby
+WhoisXMLAPI2.configure do |config|
+  config.api_key  = "your-api-key"
+end
+```
+
+Make a request
+
+```ruby
+WhoisXMLAPI2::Request.go("cnn.com")
+# => {"WhoisRecord"=>{"createdDate"=>"1993-09-22T04:00:00Z", ...
+```
+
+The output is hash parsed from the the API's JSON response.
+
+
+### API Version 1.0
+
 Provide your credentials
 
 ```ruby
@@ -29,15 +51,15 @@ end
 Make a request
 
 ```ruby
-WhoisXMLAPI2::Request.go("cnn.com")
+WhoisXMLAPI2::Request::V1.go("cnn.com")
 # => {"WhoisRecord"=>{"createdDate"=>"1993-09-22T04:00:00Z", ...
 ```
 
-The output is the API response.
+The output is hash parsed from the the API's JSON response.
 
 ## Development
 
-TODO: This
+File bugs against the GitHub issue tracker and pull requests to match, where possible.
 
 ## Contributing
 
