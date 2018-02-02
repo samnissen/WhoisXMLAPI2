@@ -10,6 +10,11 @@ module WhoisXMLAPI2
 
     def self.set?
       WhoisXMLAPI2.configuration.url && \
+      WhoisXMLAPI2.configuration.api_key
+    end
+
+    def self.set_v1?
+      WhoisXMLAPI2.configuration.url && \
       WhoisXMLAPI2.configuration.username && \
       WhoisXMLAPI2.configuration.api_key && \
       WhoisXMLAPI2.configuration.secret

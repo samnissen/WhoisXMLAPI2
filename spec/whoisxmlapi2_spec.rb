@@ -14,10 +14,10 @@ RSpec.describe WhoisXMLAPI2 do
     let(:config) { WhoisXMLAPI2.configuration }
 
     before(:each) {
-      WhoisXMLAPI2.configure do |config|
-        config.username = @username
-        config.api_key  = @api_key
-        config.secret   = @secret
+      WhoisXMLAPI2.configure do |c|
+        c.username = @username
+        c.api_key  = @api_key
+        c.secret   = @secret
       end
     }
 
@@ -28,27 +28,56 @@ RSpec.describe WhoisXMLAPI2 do
       expect(config.url).to eq("https://whoisxmlapi.com/whoisserver/WhoisService?")
     end
 
-    it "validates its configuration variables are set" do
-      expect(WhoisXMLAPI2::Configuration.set?).to be_truthy
+    it "validates its V1 configuration variables are set" do
+      expect(WhoisXMLAPI2::Configuration.set_v1?).to be_truthy
     end
 
-    it "validates its configuration variables are *not* set" do
-      WhoisXMLAPI2.configure do |config|
-        config.username = nil
-        config.api_key  = nil
-        config.secret   = nil
+    it "validates its V1 configuration variables are *not* set" do
+      WhoisXMLAPI2.configure do |c|
+        c.username = nil
+        c.api_key  = nil
+        c.secret   = nil
+      end
+
+      expect(WhoisXMLAPI2::Configuration.set_v1?).to be_falsey
+    end
+
+    it "validates its V2 configuration variables are set" do
+      expect(WhoisXMLAPI2::Configuration.set_v1?).to be_truthy
+    end
+
+    it "validates its V2 configuration variables are *not* set" do
+      WhoisXMLAPI2.configure do |c|
+        c.api_key  = nil
       end
 
       expect(WhoisXMLAPI2::Configuration.set?).to be_falsey
     end
   end
 
-  describe "Request" do
+  describe "Request::V1" do
     before(:each) do
       WhoisXMLAPI2.configure do |config|
         config.username = @username
         config.api_key  = @api_key
         config.secret   = @secret
+      end
+    end
+
+    it "fetches JSON data about the domain" do
+      path = "spec/fixtures/api-response-cnncom"
+      obj = OpenStruct.new(read: File.read(path))
+      allow(WhoisXMLAPI2::Request::V1).to receive(:open).and_return(obj)
+
+      result = WhoisXMLAPI2::Request::V1.go("cnn.com")
+      expect(result["WhoisRecord"]).not_to be_nil
+    end
+  end
+
+  describe "Request (version 2)" do
+    before(:each) do
+      WhoisXMLAPI2.configure do |config|
+        config.api_key  = @api_key
       end
     end
 
