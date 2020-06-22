@@ -1,0 +1,117 @@
+{"WhoisRecord": {
+  "createdDate": "1993-09-22T04:00:00Z",
+  "updatedDate": "2017-02-15T16:01:26Z",
+  "expiresDate": "2018-09-21T04:00:00Z",
+  "registrant": {
+    "name": "Domain Name Manager",
+    "organization": "Turner Broadcasting System, Inc.",
+    "street1": "One CNN Center",
+    "city": "Atlanta",
+    "state": "GA",
+    "postalCode": "30303",
+    "country": "UNITED STATES",
+    "email": "tmgroup@turner.com",
+    "telephone": "14048275000",
+    "fax": "14048271995",
+    "rawText": "Registrant Name: Domain Name Manager\u000aRegistrant Organization: Turner Broadcasting System, Inc.\u000aRegistrant Street: One CNN Center\u000aRegistrant City: Atlanta\u000aRegistrant State/Province: GA\u000aRegistrant Postal Code: 30303\u000aRegistrant Country: US\u000aRegistrant Phone: +1.4048275000\u000aRegistrant Fax: +1.4048271995\u000aRegistrant Email: tmgroup@turner.com"
+  },
+  "administrativeContact": {
+    "name": "Domain Name Manager",
+    "organization": "Turner Broadcasting System, Inc.",
+    "street1": "One CNN Center",
+    "city": "Atlanta",
+    "state": "GA",
+    "postalCode": "30303",
+    "country": "UNITED STATES",
+    "email": "tmgroup@turner.com",
+    "telephone": "14048275000",
+    "fax": "14048271995",
+    "rawText": "Admin Name: Domain Name Manager\u000aAdmin Organization: Turner Broadcasting System, Inc.\u000aAdmin Street: One CNN Center\u000aAdmin City: Atlanta\u000aAdmin State/Province: GA\u000aAdmin Postal Code: 30303\u000aAdmin Country: US\u000aAdmin Phone: +1.4048275000\u000aAdmin Fax: +1.4048271995\u000aAdmin Email: tmgroup@turner.com"
+  },
+  "technicalContact": {
+    "name": "TBS Server Operations",
+    "organization": "Turner Broadcasting System, Inc.",
+    "street1": "One CNN Center",
+    "city": "Atlanta",
+    "state": "GA",
+    "postalCode": "30303",
+    "country": "UNITED STATES",
+    "email": "hostmaster@turner.com",
+    "telephone": "14048275000",
+    "fax": "14048271593",
+    "rawText": "Tech Name: TBS Server Operations\u000aTech Organization: Turner Broadcasting System, Inc.\u000aTech Street: One CNN Center\u000aTech City: Atlanta\u000aTech State/Province: GA\u000aTech Postal Code: 30303\u000aTech Country: US\u000aTech Phone: +1.4048275000\u000aTech Fax: +1.4048271593\u000aTech Email: hostmaster@turner.com"
+  },
+  "domainName": "cnn.com",
+  "nameServers": {
+    "rawText": "ns-47.awsdns-05.com\u000ans-576.awsdns-08.net\u000ans-1086.awsdns-07.org\u000ans-1630.awsdns-11.co.uk\u000a",
+    "hostNames": [
+      "ns-47.awsdns-05.com",
+      "ns-576.awsdns-08.net",
+      "ns-1086.awsdns-07.org",
+      "ns-1630.awsdns-11.co.uk"
+    ],
+    "ips": [
+    ]
+  },
+  "status": "clientTransferProhibited serverDeleteProhibited serverTransferProhibited serverUpdateProhibited",
+  "rawText": "Domain Name: cnn.com\u000aRegistry Domain ID: 3269879_DOMAIN_COM-VRSN\u000aRegistrar WHOIS Server: whois.corporatedomains.com\u000aRegistrar URL: www.cscprotectsbrands.com\u000aUpdated Date: 2017-02-15T16:01:26Z\u000aCreation Date: 1993-09-22T04:00:00Z\u000aRegistrar Registration Expiration Date: 2018-09-21T04:00:00Z\u000aRegistrar: CSC CORPORATE DOMAINS, INC.\u000aRegistrar IANA ID: 299\u000aRegistrar Abuse Contact Email: domainabuse@cscglobal.com\u000aRegistrar Abuse Contact Phone: +1.8887802723\u000aDomain Status: clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited\u000aDomain Status: serverDeleteProhibited http://www.icann.org/epp#serverDeleteProhibited\u000aDomain Status: serverTransferProhibited http://www.icann.org/epp#serverTransferProhibited\u000aDomain Status: serverUpdateProhibited http://www.icann.org/epp#serverUpdateProhibited\u000aRegistry Registrant ID: \u000aRegistrant Name: Domain Name Manager\u000aRegistrant Organization: Turner Broadcasting System, Inc.\u000aRegistrant Street: One CNN Center\u000aRegistrant City: Atlanta\u000aRegistrant State/Province: GA\u000aRegistrant Postal Code: 30303\u000aRegistrant Country: US\u000aRegistrant Phone: +1.4048275000\u000aRegistrant Phone Ext: \u000aRegistrant Fax: +1.4048271995\u000aRegistrant Fax Ext: \u000aRegistrant Email: tmgroup@turner.com\u000aRegistry Admin ID: \u000aAdmin Name: Domain Name Manager\u000aAdmin Organization: Turner Broadcasting System, Inc.\u000aAdmin Street: One CNN Center\u000aAdmin City: Atlanta\u000aAdmin State/Province: GA\u000aAdmin Postal Code: 30303\u000aAdmin Country: US\u000aAdmin Phone: +1.4048275000\u000aAdmin Phone Ext: \u000aAdmin Fax: +1.4048271995\u000aAdmin Fax Ext: \u000aAdmin Email: tmgroup@turner.com\u000aRegistry Tech ID: \u000aTech Name: TBS Server Operations\u000aTech Organization: Turner Broadcasting System, Inc.\u000aTech Street: One CNN Center\u000aTech City: Atlanta\u000aTech State/Province: GA\u000aTech Postal Code: 30303\u000aTech Country: US\u000aTech Phone: +1.4048275000\u000aTech Phone Ext: \u000aTech Fax: +1.4048271593\u000aTech Fax Ext: \u000aTech Email: hostmaster@turner.com\u000aName Server: ns-47.awsdns-05.com\u000aName Server: ns-576.awsdns-08.net\u000aName Server: ns-1086.awsdns-07.org\u000aName Server: ns-1630.awsdns-11.co.uk\u000aDNSSEC: unsigned\u000aURL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/\u000a>>> Last update of WHOIS database: 2017-02-15T16:01:26Z <<<\u000a\u000aFor more information on Whois status codes, please visit https://icann.org/epp\u000a\u000aCorporation Service Company(c) (CSC)  The Trusted Partner of More than 50% of the 100 Best Global Brands.\u000a\u000aContact us to learn more about our enterprise solutions for Global Domain Name Registration and Management, Trademark Research and Watching, Brand, Logo and Auction Monitoring, as well SSL Certificate Services and DNS Hosting.\u000a\u000aNOTICE: You are not authorized to access or query our WHOIS database through the use of high-volume, automated, electronic processes or for the purpose or purposes of using the data in any manner that violates these terms of use. The Data in the CSC WHOIS database is provided by CSC for information purposes only, and to assist persons in obtaining information about or related to a domain name registration record. CSC does not guarantee its accuracy. By submitting a WHOIS query, you agree to abide by the following terms of use: you agree that you may use this Data only for lawful purposes and that under no circumstances will you use this Data to: (1) allow, enable, or otherwise support the transmission of mass unsolicited, commercial advertising or solicitations via direct mail, e-mail, telephone, or facsimile; or (2) enable high volume, automated, electronic processes that apply to CSC (or its computer systems). CSC reserves the right to terminate your access to the WHOIS database in its sole discretion for any violations by you of these terms of use. CSC reserves the right to modify these terms at any time.\u000a\u000aRegister your domain name at http://www.cscglobal.com",
+  "parseCode": 3579,
+  "header": "",
+  "strippedText": "Domain Name: cnn.com\u000aRegistrar WHOIS Server: whois.corporatedomains.com\u000aRegistrar URL: www.cscprotectsbrands.com\u000aUpdated Date: 2017-02-15T16:01:26Z\u000aCreation Date: 1993-09-22T04:00:00Z\u000aRegistrar Registration Expiration Date: 2018-09-21T04:00:00Z\u000aRegistrar: CSC CORPORATE DOMAINS, INC.\u000aRegistrar IANA ID: 299\u000aRegistrar Abuse Contact Email: domainabuse@cscglobal.com\u000aRegistrar Abuse Contact Phone: +1.8887802723\u000aDomain Status: clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited\u000aDomain Status: serverDeleteProhibited http://www.icann.org/epp#serverDeleteProhibited\u000aDomain Status: serverTransferProhibited http://www.icann.org/epp#serverTransferProhibited\u000aDomain Status: serverUpdateProhibited http://www.icann.org/epp#serverUpdateProhibited\u000aRegistrant Name: Domain Name Manager\u000aRegistrant Organization: Turner Broadcasting System, Inc.\u000aRegistrant Street: One CNN Center\u000aRegistrant City: Atlanta\u000aRegistrant State/Province: GA\u000aRegistrant Postal Code: 30303\u000aRegistrant Country: US\u000aRegistrant Phone: +1.4048275000\u000aRegistrant Fax: +1.4048271995\u000aRegistrant Email: tmgroup@turner.com\u000aAdmin Name: Domain Name Manager\u000aAdmin Organization: Turner Broadcasting System, Inc.\u000aAdmin Street: One CNN Center\u000aAdmin City: Atlanta\u000aAdmin State/Province: GA\u000aAdmin Postal Code: 30303\u000aAdmin Country: US\u000aAdmin Phone: +1.4048275000\u000aAdmin Fax: +1.4048271995\u000aAdmin Email: tmgroup@turner.com\u000aTech Name: TBS Server Operations\u000aTech Organization: Turner Broadcasting System, Inc.\u000aTech Street: One CNN Center\u000aTech City: Atlanta\u000aTech State/Province: GA\u000aTech Postal Code: 30303\u000aTech Country: US\u000aTech Phone: +1.4048275000\u000aTech Fax: +1.4048271593\u000aTech Email: hostmaster@turner.com\u000aName Server: ns-47.awsdns-05.com\u000aName Server: ns-576.awsdns-08.net\u000aName Server: ns-1086.awsdns-07.org\u000aName Server: ns-1630.awsdns-11.co.uk\u000a",
+  "footer": "\u000a",
+  "audit": {
+    "createdDate": "2018-02-01 03:20:33.000 UTC",
+    "updatedDate": "2018-02-01 03:20:33.000 UTC"
+  },
+  "customField1Name": "RegistrarContactEmail",
+  "customField1Value": "domainabuse@cscglobal.com",
+  "registrarName": "CSC CORPORATE DOMAINS, INC.",
+  "registrarIANAID": "299",
+  "whoisServer": "whois.corporatedomains.com",
+  "customField2Name": "RegistrarContactPhone",
+  "customField3Name": "RegistrarURL",
+  "customField2Value": "+1.8887802723",
+  "customField3Value": "www.cscprotectsbrands.com",
+  "registryData": {
+    "createdDate": "1993-09-22T04:00:00Z",
+    "updatedDate": "2017-02-15T17:31:58Z",
+    "expiresDate": "2018-09-21T04:00:00Z",
+    "domainName": "cnn.com",
+    "nameServers": {
+      "rawText": "NS-1086.AWSDNS-07.ORG\u000aNS-1630.AWSDNS-11.CO.UK\u000aNS-47.AWSDNS-05.COM\u000aNS-576.AWSDNS-08.NET\u000a",
+      "hostNames": [
+        "NS-1086.AWSDNS-07.ORG",
+        "NS-1630.AWSDNS-11.CO.UK",
+        "NS-47.AWSDNS-05.COM",
+        "NS-576.AWSDNS-08.NET"
+      ],
+      "ips": [
+      ]
+    },
+    "status": "clientTransferProhibited serverDeleteProhibited serverTransferProhibited serverUpdateProhibited",
+    "rawText": "Domain Name: CNN.COM\u000a   Registry Domain ID: 3269879_DOMAIN_COM-VRSN\u000a   Registrar WHOIS Server: whois.corporatedomains.com\u000a   Registrar URL: http://www.cscglobal.com/global/web/csc/digital-brand-services.html\u000a   Updated Date: 2017-02-15T17:31:58Z\u000a   Creation Date: 1993-09-22T04:00:00Z\u000a   Registry Expiry Date: 2018-09-21T04:00:00Z\u000a   Registrar: CSC Corporate Domains, Inc.\u000a   Registrar IANA ID: 299\u000a   Registrar Abuse Contact Email: domainabuse@cscglobal.com\u000a   Registrar Abuse Contact Phone: 8887802723\u000a   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\u000a   Domain Status: serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited\u000a   Domain Status: serverTransferProhibited https://icann.org/epp#serverTransferProhibited\u000a   Domain Status: serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited\u000a   Name Server: NS-1086.AWSDNS-07.ORG\u000a   Name Server: NS-1630.AWSDNS-11.CO.UK\u000a   Name Server: NS-47.AWSDNS-05.COM\u000a   Name Server: NS-576.AWSDNS-08.NET\u000a   DNSSEC: unsigned\u000a   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/\u000a>>> Last update of whois database: 2018-02-01T03:20:21Z <<<\u000a\u000aFor more information on Whois status codes, please visit https://icann.org/epp\u000a\u000aNOTICE: The expiration date displayed in this record is the date the\u000aregistrar's sponsorship of the domain name registration in the registry is\u000acurrently set to expire. This date does not necessarily reflect the expiration\u000adate of the domain name registrant's agreement with the sponsoring\u000aregistrar.  Users may consult the sponsoring registrar's Whois database to\u000aview the registrar's reported date of expiration for this registration.\u000a\u000aTERMS OF USE: You are not authorized to access or query our Whois\u000adatabase through the use of electronic processes that are high-volume and\u000aautomated except as reasonably necessary to register domain names or\u000amodify existing registrations; the Data in VeriSign Global Registry\u000aServices' (\"VeriSign\") Whois database is provided by VeriSign for\u000ainformation purposes only, and to assist persons in obtaining information\u000aabout or related to a domain name registration record. VeriSign does not\u000aguarantee its accuracy. By submitting a Whois query, you agree to abide\u000aby the following terms of use: You agree that you may use this Data only\u000afor lawful purposes and that under no circumstances will you use this Data\u000ato: (1) allow, enable, or otherwise support the transmission of mass\u000aunsolicited, commercial advertising or solicitations via e-mail, telephone,\u000aor facsimile; or (2) enable high volume, automated, electronic processes\u000athat apply to VeriSign (or its computer systems). The compilation,\u000arepackaging, dissemination or other use of this Data is expressly\u000aprohibited without the prior written consent of VeriSign. You agree not to\u000ause electronic processes that are automated and high-volume to access or\u000aquery the Whois database except as reasonably necessary to register\u000adomain names or modify existing registrations. VeriSign reserves the right\u000ato restrict your access to the Whois database in its sole discretion to ensure\u000aoperational stability.  VeriSign may restrict or terminate your access to the\u000aWhois database for failure to abide by these terms of use. VeriSign\u000areserves the right to modify these terms at any time.\u000a\u000aThe Registry database contains ONLY .COM, .NET, .EDU domains and\u000aRegistrars.",
+    "parseCode": 251,
+    "header": "",
+    "strippedText": "Domain Name: CNN.COM\u000aRegistry Domain ID: 3269879_DOMAIN_COM-VRSN\u000aRegistrar WHOIS Server: whois.corporatedomains.com\u000aRegistrar URL: http://www.cscglobal.com/global/web/csc/digital-brand-services.html\u000aUpdated Date: 2017-02-15T17:31:58Z\u000aCreation Date: 1993-09-22T04:00:00Z\u000aRegistry Expiry Date: 2018-09-21T04:00:00Z\u000aRegistrar: CSC Corporate Domains, Inc.\u000aRegistrar IANA ID: 299\u000aRegistrar Abuse Contact Email: domainabuse@cscglobal.com\u000aRegistrar Abuse Contact Phone: 8887802723\u000aDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\u000aDomain Status: serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited\u000aDomain Status: serverTransferProhibited https://icann.org/epp#serverTransferProhibited\u000aDomain Status: serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited\u000aName Server: NS-1086.AWSDNS-07.ORG\u000aName Server: NS-1630.AWSDNS-11.CO.UK\u000aName Server: NS-47.AWSDNS-05.COM\u000aName Server: NS-576.AWSDNS-08.NET\u000aDNSSEC: unsigned\u000aURL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/\u000a>>> Last update of whois database: 2018-02-01T03:20:21Z <<<\u000aFor more information on Whois status codes, please visit https://icann.org/epp\u000aNOTICE: The expiration date displayed in this record is the date the\u000aregistrar's sponsorship of the domain name registration in the registry is\u000acurrently set to expire. This date does not necessarily reflect the expiration\u000adate of the domain name registrant's agreement with the sponsoring\u000aregistrar.  Users may consult the sponsoring registrar's Whois database to\u000aview the registrar's reported date of expiration for this registration.\u000aTERMS OF USE: You are not authorized to access or query our Whois\u000adatabase through the use of electronic processes that are high-volume and\u000aautomated except as reasonably necessary to register domain names or\u000amodify existing registrations; the Data in VeriSign Global Registry\u000aServices' (\"VeriSign\") Whois database is provided by VeriSign for\u000ainformation purposes only, and to assist persons in obtaining information\u000aabout or related to a domain name registration record. VeriSign does not\u000aguarantee its accuracy. By submitting a Whois query, you agree to abide\u000aby the following terms of use: You agree that you may use this Data only\u000afor lawful purposes and that under no circumstances will you use this Data\u000ato: (1) allow, enable, or otherwise support the transmission of mass\u000aunsolicited, commercial advertising or solicitations via e-mail, telephone,\u000aor facsimile; or (2) enable high volume, automated, electronic processes\u000athat apply to VeriSign (or its computer systems). The compilation,\u000arepackaging, dissemination or other use of this Data is expressly\u000aprohibited without the prior written consent of VeriSign. You agree not to\u000ause electronic processes that are automated and high-volume to access or\u000aquery the Whois database except as reasonably necessary to register\u000adomain names or modify existing registrations. VeriSign reserves the right\u000ato restrict your access to the Whois database in its sole discretion to ensure\u000aoperational stability.  VeriSign may restrict or terminate your access to the\u000aWhois database for failure to abide by these terms of use. VeriSign\u000areserves the right to modify these terms at any time.\u000aThe Registry database contains ONLY .COM, .NET, .EDU domains and\u000aRegistrars.\u000a",
+    "footer": "\u000a",
+    "audit": {
+      "createdDate": "2018-02-01 03:20:33.000 UTC",
+      "updatedDate": "2018-02-01 03:20:33.000 UTC"
+    },
+    "customField1Name": "RegistrarContactEmail",
+    "customField1Value": "domainabuse@cscglobal.com",
+    "registrarName": "CSC Corporate Domains, Inc.",
+    "registrarIANAID": "299",
+    "createdDateNormalized": "1993-09-22 04:00:00 UTC",
+    "updatedDateNormalized": "2017-02-15 17:31:58 UTC",
+    "expiresDateNormalized": "2018-09-21 04:00:00 UTC",
+    "customField2Name": "RegistrarContactPhone",
+    "customField3Name": "RegistrarURL",
+    "customField2Value": "8887802723",
+    "customField3Value": "http://www.cscglobal.com/global/web/csc/digital-brand-services.html",
+    "whoisServer": "whois.corporatedomains.com"
+  },
+  "contactEmail": "tmgroup@turner.com",
+  "domainNameExt": ".com",
+  "estimatedDomainAge": 8898
+}}

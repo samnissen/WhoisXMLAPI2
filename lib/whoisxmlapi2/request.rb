@@ -19,8 +19,8 @@ module WhoisXMLAPI2
         end
 
         def fixture_value
-          directory = File.dirname(File.expand_path('../..', __FILE__))
-          dir_pattern = File.join(directory, "spec/fixtures/api-response-*")
+          directory = File.dirname(File.expand_path(__FILE__))
+          dir_pattern = File.join(directory, "assets/api-response-*")
           file_path = Dir[dir_pattern].sample
 
           JSON.parse(File.read(file_path))

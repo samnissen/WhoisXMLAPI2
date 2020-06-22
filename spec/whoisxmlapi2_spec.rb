@@ -85,10 +85,10 @@ RSpec.describe WhoisXMLAPI2 do
 
       it "returns a fixture" do
         expect(WhoisXMLAPI2.configuration.mock_out_for_testing).to be_truthy
-        result = WhoisXMLAPI2::Request::V1.go("any-url.com")
+        result = WhoisXMLAPI2::Request::V1.go("any-url.not-real/will-not:::parse")
         fixtures = []
 
-        Dir["spec/fixtures/api-response-*"].each do |path|
+        Dir["lib/whoisxmlapi2/assets/api-response-*"].each do |path|
           fixtures << JSON.parse(File.read(path))
         end
 
@@ -98,8 +98,11 @@ RSpec.describe WhoisXMLAPI2 do
       it "does not send a request" do
         expect(WhoisXMLAPI2.configuration.mock_out_for_testing).to be_truthy
         expect(WhoisXMLAPI2::Request::V1).not_to receive(:open)
+        expect(Kernel).not_to receive(:open)
+        expect(OpenURI).not_to receive(:open)
+        expect(self).not_to receive(:open)
 
-        WhoisXMLAPI2::Request.go("cnn.com")
+        WhoisXMLAPI2::Request.go("some.fake:url.here/http://{}.shh")
       end
     end
   end
@@ -118,7 +121,7 @@ RSpec.describe WhoisXMLAPI2 do
       obj = OpenStruct.new(read: File.read(path))
       allow(WhoisXMLAPI2::Request).to receive(:open).with(anything).and_return(obj)
 
-      result = WhoisXMLAPI2::Request.go("cnn.com")
+      result = WhoisXMLAPI2::Request.go("fake-cnn.com.farse")
       expect(result["WhoisRecord"]).not_to be_nil
     end
 
@@ -131,10 +134,10 @@ RSpec.describe WhoisXMLAPI2 do
 
       it "returns a fixture" do
         expect(WhoisXMLAPI2.configuration.mock_out_for_testing).to be_truthy
-        result = WhoisXMLAPI2::Request.go("any-url.com")
+        result = WhoisXMLAPI2::Request.go("any-url.notrealtldhere")
         fixtures = []
 
-        Dir["spec/fixtures/api-response-*"].each do |path|
+        Dir["lib/whoisxmlapi2/assets/api-response-*"].each do |path|
           fixtures << JSON.parse(File.read(path))
         end
 
@@ -144,8 +147,11 @@ RSpec.describe WhoisXMLAPI2 do
       it "does not send a request" do
         expect(WhoisXMLAPI2.configuration.mock_out_for_testing).to be_truthy
         expect(WhoisXMLAPI2::Request).not_to receive(:open)
+        expect(Kernel).not_to receive(:open)
+        expect(OpenURI).not_to receive(:open)
+        expect(self).not_to receive(:open)
 
-        WhoisXMLAPI2::Request.go("cnn.com")
+        WhoisXMLAPI2::Request.go("cnn.nope.false.fail.domainname:here")
       end
     end
   end
