@@ -1,0 +1,119 @@
+{
+   "createdDate": "2012-11-20T02:20:22Z",
+   "updatedDate": "2020-03-25T22:24:16Z",
+   "expiresDate": "2024-11-20T02:20:22Z",
+   "registrant": {
+      "name": "REDACTED FOR PRIVACY",
+      "organization": "Stratechery LLC",
+      "street1": "REDACTED FOR PRIVACY",
+      "city": "REDACTED FOR PRIVACY",
+      "state": "California",
+      "postalCode": "REDACTED FOR PRIVACY",
+      "country": "UNITED STATES",
+      "countryCode": "US",
+      "email": "14fa79e8769122bafe31e5f72235d28f-12757985@contact.gandi.net",
+      "telephone": "",
+      "fax": "",
+      "rawText": "(omitted in the demo)"
+   },
+   "administrativeContact": {
+      "name": "REDACTED FOR PRIVACY",
+      "street1": "63-65 boulevard Massena",
+      "city": "Paris",
+      "state": "Paris",
+      "postalCode": "75013",
+      "country": "FRANCE",
+      "countryCode": "FR",
+      "email": "a5dba9803249014fa1d9bc847008759c-1422560@contact.gandi.net",
+      "telephone": "33170377666",
+      "fax": "33143730576",
+      "rawText": "(omitted in the demo)"
+   },
+   "technicalContact": {
+      "name": "REDACTED FOR PRIVACY",
+      "street1": "63-65 boulevard Massena",
+      "city": "Paris",
+      "state": "Paris",
+      "postalCode": "75013",
+      "country": "FRANCE",
+      "countryCode": "FR",
+      "email": "a5dba9803249014fa1d9bc847008759c-1422560@contact.gandi.net",
+      "telephone": "33170377666",
+      "fax": "33143730576",
+      "rawText": "(omitted in the demo)"
+   },
+   "domainName": "stratechery.com",
+   "nameServers": {
+      "rawText": "(omitted in the demo)",
+      "hostNames": [
+         "A.DNS.GANDI.NET",
+         "B.DNS.GANDI.NET",
+         "C.DNS.GANDI.NET"
+      ],
+      "ips": []
+   },
+   "status": "(omitted in the demo)",
+   "rawText": "(omitted in the demo)",
+   "parseCode": 3579,
+   "header": "(omitted in the demo)",
+   "strippedText": "(omitted in the demo)",
+   "footer": "(omitted in the demo)",
+   "audit": {
+      "createdDate": "2020-06-22 10:25:51.048 UTC",
+      "updatedDate": "2020-06-22 10:25:51.048 UTC"
+   },
+   "customField1Name": "RegistrarContactEmail",
+   "customField1Value": "abuse@support.gandi.net",
+   "registrarName": "GANDI SAS",
+   "registrarIANAID": "81",
+   "whoisServer": "whois.gandi.net",
+   "createdDateNormalized": "2012-11-20 02:20:22 UTC",
+   "updatedDateNormalized": "2020-03-25 22:24:16 UTC",
+   "expiresDateNormalized": "2024-11-20 02:20:22 UTC",
+   "customField2Name": "RegistrarContactPhone",
+   "customField3Name": "RegistrarURL",
+   "customField2Value": "+33.170377661",
+   "customField3Value": "http://www.gandi.net",
+   "dataError": "MASKED_WHOIS_DATA",
+   "registryData": {
+      "createdDate": "2012-11-20T02:20:22Z",
+      "updatedDate": "2019-09-13T02:46:27Z",
+      "expiresDate": "2024-11-20T02:20:22Z",
+      "domainName": "stratechery.com",
+      "nameServers": {
+         "rawText": "(omitted in the demo)",
+         "hostNames": [
+            "A.DNS.GANDI.NET",
+            "B.DNS.GANDI.NET",
+            "C.DNS.GANDI.NET"
+         ],
+         "ips": []
+      },
+      "status": "(omitted in the demo)",
+      "rawText": "(omitted in the demo)",
+      "parseCode": 251,
+      "header": "(omitted in the demo)",
+      "strippedText": "(omitted in the demo)",
+      "footer": "(omitted in the demo)",
+      "audit": {
+         "createdDate": "2020-06-22 10:25:50.170 UTC",
+         "updatedDate": "2020-06-22 10:25:50.170 UTC"
+      },
+      "customField1Name": "RegistrarContactEmail",
+      "customField1Value": "abuse@support.gandi.net",
+      "registrarName": "Gandi SAS",
+      "registrarIANAID": "81",
+      "createdDateNormalized": "2012-11-20 02:20:22 UTC",
+      "updatedDateNormalized": "2019-09-13 02:46:27 UTC",
+      "expiresDateNormalized": "2024-11-20 02:20:22 UTC",
+      "customField2Name": "RegistrarContactPhone",
+      "customField3Name": "RegistrarURL",
+      "customField2Value": "+33.170377661",
+      "customField3Value": "http://www.gandi.net",
+      "whoisServer": "whois.gandi.net"
+   },
+   "domainAvailability": "UNAVAILABLE",
+   "contactEmail": "14fa79e8769122bafe31e5f72235d28f-12757985@contact.gandi.net",
+   "domainNameExt": ".com",
+   "estimatedDomainAge": 2771
+}

@@ -2,6 +2,8 @@ module WhoisXMLAPI2
   class Request
     class << self
       def go(domain)
+        return fixture_value if config.mock_out_for_testing
+
         JSON.parse(open(config.url + params(domain)).read)
       end
 
@@ -15,11 +17,21 @@ module WhoisXMLAPI2
 
           WhoisXMLAPI2.configuration
         end
+
+        def fixture_value
+          directory = File.dirname(File.expand_path('../..', __FILE__))
+          dir_pattern = File.join(directory, "spec/fixtures/api-response-*")
+          file_path = Dir[dir_pattern].sample
+
+          JSON.parse(File.read(file_path))
+        end
     end
 
     class V1
       class << self
         def go(domain)
+          return WhoisXMLAPI2::Request.send(:fixture_value) if config.mock_out_for_testing
+
           timestamp = (Time.now.to_f * 1000).to_i
           digest = generate_digest(timestamp)
 
