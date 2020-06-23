@@ -1,11 +1,12 @@
 module WhoisXMLAPI2
   class Configuration
-    attr_accessor :username, :api_key, :secret, :url, :browser_key
+    attr_accessor :username, :api_key, :secret, :url, :browser_key,
+                  :mock_out_for_testing
 
     DEFAULT_SERVICE_ENDPOINT = "https://whoisxmlapi.com/whoisserver/WhoisService?".freeze
 
     def initialize
-      @url        = DEFAULT_SERVICE_ENDPOINT
+      @url = DEFAULT_SERVICE_ENDPOINT
     end
 
     def self.set?

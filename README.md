@@ -22,7 +22,7 @@ Provide your credentials
 
 ```ruby
 WhoisXMLAPI2.configure do |config|
-  config.api_key  = "your-api-key"
+  config.api_key = "your-api-key"
 end
 ```
 
@@ -33,8 +33,7 @@ WhoisXMLAPI2::Request.go("cnn.com")
 # => {"WhoisRecord"=>{"createdDate"=>"1993-09-22T04:00:00Z", ...
 ```
 
-The output is hash parsed from the the API's JSON response.
-
+The output is the parsed object from the the API's JSON response.
 
 ### API Version 1.0
 
@@ -55,7 +54,29 @@ WhoisXMLAPI2::Request::V1.go("cnn.com")
 # => {"WhoisRecord"=>{"createdDate"=>"1993-09-22T04:00:00Z", ...
 ```
 
-The output is hash parsed from the the API's JSON response.
+The output is the parsed object from the the API's JSON response.
+
+### Testing your application
+The gem has an additional feature:
+mocking responses for testing using this gem.
+
+```ruby
+WhoisXMLAPI2.configure do |config|
+  config.mock_out_for_testing = true
+end
+```
+
+If `mock_out_for_testing` is set to evaluate as truthy, the app will
+return one of the values in the gem's `assets` directory, chosen
+at random from the files matching `/api-response-*/`,
+instead of making a request to the API.
+
+#### WARNING
+
+This value will persist in your process!
+Re-set the value to false if you intend to
+address the API within the same context
+as you are testing it.
 
 ## Development
 
