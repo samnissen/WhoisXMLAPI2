@@ -67,8 +67,9 @@ end
 ```
 
 If `mock_out_for_testing` is set to evaluate as truthy, the app will
-return one of the values in the `spec/fixtures/` directory, chosen
-at random, instead of making a request to the API.
+return one of the values in the gem's `assets` directory, chosen
+at random from the files matching `/api-response-*/`,
+instead of making a request to the API.
 
 #### WARNING
 
