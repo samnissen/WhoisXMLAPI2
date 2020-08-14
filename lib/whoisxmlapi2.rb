@@ -12,11 +12,20 @@ require "whoisxmlapi2/request"
 require "whoisxmlapi2/version"
 
 module WhoisXMLAPI2
-  def self.configuration
-    @configuration ||= Configuration.new
-  end
+  class << self
+    def configuration(params = {})
+      @configuration ||= Configuration.new(params)
+    end
 
-  def self.configure
-    yield(configuration)
+    def config_instance
+      @configuration
+    end
+
+    def configure(params = {})
+      configuration(params) unless params.empty?
+      raise InvalidArgument, 'Block is required' if params.empty? && !block_given?
+
+      yield configuration if block_given?
+    end
   end
 end

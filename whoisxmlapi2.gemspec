@@ -10,7 +10,6 @@ Gem::Specification.new do |spec|
   spec.email         = ["scnissen@gmail.com"]
 
   spec.summary       = %q{An open source WhoisXMLAPI interface}
-  # spec.description   = %q{TODO: Write a longer description or delete this line.}
   spec.homepage      = "https://github.com"
   spec.license       = "MIT"
 

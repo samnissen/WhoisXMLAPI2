@@ -20,10 +20,28 @@ Or install it yourself as:
 
 Provide your credentials
 
+#### With block
+
 ```ruby
 WhoisXMLAPI2.configure do |config|
   config.api_key = "your-api-key"
+  config.username = "your-api-username"
+  config.secret   = "your-secret-key"
+  config.mock_out_for_testing = false
 end
+```
+
+#### With params
+
+```ruby
+config_params = {
+   api_key: "your-api-key",
+   username: "your-api-username",
+   secret: "your-secret-key",
+   mock_out_for_testing: false
+}
+
+WhoisXMLAPI2.configure(config_params)
 ```
 
 Make a request

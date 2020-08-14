@@ -9,51 +9,103 @@ RSpec.describe WhoisXMLAPI2 do
     expect(WhoisXMLAPI2::VERSION).not_to be nil
   end
 
+  let(:config) { WhoisXMLAPI2.config_instance }
+
+  after { WhoisXMLAPI2.instance_variable_set(:@configuration, nil) }
+
   describe "Configuration" do
-    let(:config) { WhoisXMLAPI2.configuration }
-
-    before(:each) {
-      WhoisXMLAPI2.configure do |c|
-        c.username = username
-        c.api_key  = api_key
-        c.secret   = secret
-        config.mock_out_for_testing = false
-      end
-    }
-
-    it "configures the relevant access variables" do
-      expect(config.username).to eq(username)
-      expect(config.api_key).to eq(api_key)
-      expect(config.secret).to eq(secret)
-      expect(config.url).to eq("https://whoisxmlapi.com/whoisserver/WhoisService?")
-      expect(config.mock_out_for_testing).to be_falsey
-    end
-
-    it "validates its V1 configuration variables are set" do
-      expect(WhoisXMLAPI2::Configuration.set_v1?).to be_truthy
-    end
-
-    it "validates its V1 configuration variables are *not* set" do
-      WhoisXMLAPI2.configure do |c|
-        c.username = nil
-        c.api_key  = nil
-        c.secret   = nil
-        config.mock_out_for_testing = false
+    context 'when configure with "configure" method' do
+      before do
+        WhoisXMLAPI2.configure do |c|
+          c.username                  = username
+          c.api_key                   = api_key
+          c.secret                    = secret
+          config.mock_out_for_testing = false
+        end
       end
 
-      expect(WhoisXMLAPI2::Configuration.set_v1?).to be_falsey
-    end
-
-    it "validates its V2 configuration variables are set" do
-      expect(WhoisXMLAPI2::Configuration.set_v1?).to be_truthy
-    end
-
-    it "validates its V2 configuration variables are *not* set" do
-      WhoisXMLAPI2.configure do |c|
-        c.api_key  = nil
+      it "configures the relevant access variables" do
+        expect(config.username).to eq(username)
+        expect(config.api_key).to eq(api_key)
+        expect(config.secret).to eq(secret)
+        expect(config.url).to eq("https://whoisxmlapi.com/whoisserver/WhoisService?")
+        expect(config.mock_out_for_testing).to be_falsey
       end
 
-      expect(WhoisXMLAPI2::Configuration.set?).to be_falsey
+      it "validates its V1 configuration variables are set" do
+        expect(WhoisXMLAPI2::Configuration.set_v1?).to be_truthy
+      end
+
+      it "validates its V1 configuration variables are *not* set" do
+        WhoisXMLAPI2.configure do |c|
+          c.username = nil
+          c.api_key  = nil
+          c.secret   = nil
+          config.mock_out_for_testing = false
+        end
+
+        expect(WhoisXMLAPI2::Configuration.set_v1?).to be_falsey
+      end
+
+      it "validates its V2 configuration variables are set" do
+        expect(WhoisXMLAPI2::Configuration.set_v1?).to be_truthy
+      end
+
+      it "validates its V2 configuration variables are *not* set" do
+        WhoisXMLAPI2.configure do |c|
+          c.api_key  = nil
+        end
+
+        expect(WhoisXMLAPI2::Configuration.set?).to be_falsey
+      end
+    end
+
+    context 'when configure with options' do
+      let(:config_options) do
+        {
+          username: username,
+          api_key: api_key,
+          secret: secret,
+          mock_out_for_testing: false
+        }
+      end
+
+      before { WhoisXMLAPI2.configure(config_options) }
+
+      it "configures the relevant access variables" do
+        expect(config.username).to eq(username)
+        expect(config.api_key).to eq(api_key)
+        expect(config.secret).to eq(secret)
+        expect(config.url).to eq("https://whoisxmlapi.com/whoisserver/WhoisService?")
+        expect(config.mock_out_for_testing).to be_falsey
+      end
+
+      it "validates its V1 configuration variables are set" do
+        expect(WhoisXMLAPI2::Configuration.set_v1?).to be_truthy
+      end
+
+      it "validates its V1 configuration variables are *not* set" do
+        WhoisXMLAPI2.configure do |c|
+          c.username = nil
+          c.api_key  = nil
+          c.secret   = nil
+          config.mock_out_for_testing = false
+        end
+
+        expect(WhoisXMLAPI2::Configuration.set_v1?).to be_falsey
+      end
+
+      it "validates its V2 configuration variables are set" do
+        expect(WhoisXMLAPI2::Configuration.set_v1?).to be_truthy
+      end
+
+      it "validates its V2 configuration variables are *not* set" do
+        WhoisXMLAPI2.configure do |c|
+          c.api_key  = nil
+        end
+
+        expect(WhoisXMLAPI2::Configuration.set?).to be_falsey
+      end
     end
   end
 
@@ -79,6 +131,8 @@ RSpec.describe WhoisXMLAPI2 do
     context "mock value is set to true" do
       before(:each) do
         WhoisXMLAPI2.configure do |config|
+          config.api_key = nil
+          config.url = nil
           config.mock_out_for_testing = true
         end
       end
